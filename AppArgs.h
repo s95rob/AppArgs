@@ -55,6 +55,7 @@ namespace AppArgs {
 			m_Args = new Arg[argc];
 			for (int i = 0; i < argc; i++) {
 				m_Args[i].m_ArgString = argv[i];
+				m_Args[i].m_Index = i;
 				if (i < argc)
 					m_Args[i].m_NextArg = &m_Args[i + 1];
 			}
